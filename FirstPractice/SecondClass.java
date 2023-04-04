@@ -1,3 +1,5 @@
+package FirstPractice;
+
 public class SecondClass {
     public static void main(String[] args) {
         System.out.println("Hello, Jason");
@@ -26,5 +28,21 @@ public class SecondClass {
         if (newValue == 50) {
             System.out.println("This is an error");
         }
+
+        boolean isCar = false;
+        if (!isCar) {
+            System.out.println("This is not supposed to happen");
+        }
+
+        String makeOfCar = "Honda";
+        boolean isDomestic = makeOfCar == "Honda" ? false : true;
+
+        if (!isDomestic) {
+            System.out.println("This car is not domestic to the United States");
+        }
+
+        int age = 22;
+        String canTheyDrink = (age >= 21) ? "legally drink" : "not legally drink";
+        System.out.println("You can " + canTheyDrink);
     }
 }
