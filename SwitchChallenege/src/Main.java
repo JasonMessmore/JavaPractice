@@ -17,5 +17,6 @@ public class Main {
         default:
             System.out.println(letter + " not found");
             break;
-    } }
+    }
+    }
 }
