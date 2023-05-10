@@ -39,3 +39,21 @@ class DifferenceOfSquaresCalculator {
 //        return total;
 //    }
 //}
+//public class SharedDigit {
+//    public static boolean hasSharedDigit(int num1, int num2){
+//        int num1Dig1 = 0;
+//        int num1Dig2 = 0;
+//        int num2Dig1 = 0;
+//        int num2Dig2 = 0;
+//        if (num1 < 10 || num2 < 10 || num1 > 99 || num2 > 99){
+//            return false;
+//        }
+//        num1Dig1 = num1 % 10;
+//        num1Dig2 = num1 / 10;
+//        num2Dig1 = num2 % 10;
+//        num2Dig2 = num2 / 10;
+//        if (num1Dig1 == num2Dig1 || num1Dig1 == num2Dig2 || num1Dig2 == num2Dig1 || num1Dig2 == num2Dig2){
+//            return true;
+//        } return false;
+//    }
+//}
