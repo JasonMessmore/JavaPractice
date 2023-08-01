@@ -10,8 +10,8 @@ public class Main {
         first.setCustomerPhone(614123495);
         first.setWithdrawalAmount(200000);
 
-        first.setWithdrawalAmount(200001);
-        first.withdrawalFunds();
+        first.setDepositAmount(3432);
+        first.depositFunds();
 
 
         first.accountInfo();

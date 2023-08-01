@@ -53,7 +53,8 @@ public class BankAccount {
     int status = 0;
     public void withdrawalFunds() {
         if (withdrawalAmount > accountBalance) {
-            System.out.println("Insufficient Funds Available");
+            System.out.println("Insufficient Funds Available" + newLine +
+                    "You tried to withdrawal " + withdrawalAmount + " with a current balance of " + accountBalance);
             System.exit(1);
         }
         accountBalance = accountBalance - withdrawalAmount;
@@ -61,6 +62,8 @@ public class BankAccount {
 
     public void depositFunds() {
         accountBalance = accountBalance + depositAmount;
+        System.out.println("You deposited " + depositAmount + newLine +
+                "You now have " + accountBalance + " funds available.");
     }
 
     private double depositAmount = 0;
