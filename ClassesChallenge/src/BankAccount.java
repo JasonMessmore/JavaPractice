@@ -1,12 +1,33 @@
 public class BankAccount {
 
-    private double accountNumber = 0;
+    private String accountNumber = "0";
     private double accountBalance = 0;
     private String customerName = "John";
     private String customerEmail = "john@example.com";
-    private long customerPhone = 614234567;
+    private String customerPhone = "614234567";
 
-    public double getAccountNumber() {
+    public BankAccount() {
+        this("43545", 2.50, "Default name", "Default address", "Default phone");
+        System.out.println("Empty constructor called");
+    }
+    public BankAccount(String accountNumber, double accountBalance, String customerName, String customerEmail, String customerPhone) {
+        System.out.println("Account constructor with parameters called");
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+    }
+
+    public BankAccount(String customerName, String customerEmail, String customerPhone) {
+        this("99999", 100.55, customerName, customerEmail, customerPhone);
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+        System.out.println("Based constructor called");
+    }
+
+    public String getAccountNumber() {
         return accountNumber;
     }
     public double getAccountBalance() {
@@ -18,10 +39,10 @@ public class BankAccount {
     public String getCustomerEmail() {
         return customerEmail;
     }
-    public long getCustomerPhone() {
+    public String getCustomerPhone() {
         return customerPhone;
     }
-    public void setAccountNumber(double accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -37,7 +58,7 @@ public class BankAccount {
         this.customerEmail = customerEmail;
     }
 
-    public void setCustomerPhone(long customerPhone) {
+    public void setCustomerPhone(String customerPhone) {
         this.customerPhone = customerPhone;
     }
 

@@ -1,4 +1,4 @@
-public class Person {
+public class PersonChallenge {
     private String firstName;
     private String lastName;
     private int age;
