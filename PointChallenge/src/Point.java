@@ -29,8 +29,8 @@ public class Point {
     }
 
     public double distance() {
-        int xAns = (getX() - x)*(getX() - x);
-        int yAns = (getY() - y)*(getY() - y);
+        int xAns = (0 - getX())*(0 - getX());
+        int yAns = (0 - getY())*(0 - getY());
         return Math.sqrt(xAns + yAns);
     }
 
@@ -40,9 +40,7 @@ public class Point {
         return Math.sqrt(xAns + yAns);
     }
 
-    public double distance(double Point) {
-        int xAns = (getX() - x)*(getX() - x);
-        int yAns = (getY() - y)*(getY() - y);
-        return Math.sqrt(xAns + yAns);
+    public double distance(Point another) {
+        return distance(another.getX(), another.getY());
     }
 }
