@@ -7,8 +7,8 @@ public class Main {
         System.out.println("Pay = " + jason.collectPay());
         int jasonAge = jason.getAge();
 
-        Employee joe = new SalariedEmployee("Joe", "10/12/1998",
-                "03/20/2022", 250000);
+        SalariedEmployee joe = new SalariedEmployee("Joe", "10/12/1998",
+                "03/20/2020", 250000);
         System.out.println(joe);
         System.out.println("Joe's paycheck = $" + joe.collectPay());
 
